@@ -1,0 +1,4 @@
+1. For description.......
+   DESC : describe;
+   DESC table_name;
+   DESC momos;
