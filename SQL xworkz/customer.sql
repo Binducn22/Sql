@@ -45,3 +45,4 @@ ALTER TABLE customer
 DROP CONSTRAINT unique_contact_email;
 
 SELECT * FROM customer;
+show table status;

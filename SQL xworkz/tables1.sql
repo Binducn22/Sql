@@ -1,7 +1,10 @@
 CREATE DATABASE tables1;
 USE tables1;
 
-CREATE TABLE chat_center(id int not null,c_center_name varchar(20),c_owner_name varchar(30) not null unique,available_chats varchar(30),c_profit bigint,selling_chat bigint,c_loc varchar(20),c_menu varchar(20),c_customer_day int,c_employer int,constraint c_menu_uni unique(c_menu),constraint c_customer_day_chk check(c_customer_day>1),constraint c_profit_chk check(c_profit>500));
+CREATE TABLE chat_center(id int not null,c_center_name varchar(20),c_owner_name varchar(30) not null unique,
+available_chats varchar(30),c_profit bigint,selling_chat bigint,c_loc varchar(20),c_menu varchar(20),
+c_customer_day int,c_employer int,
+constraint c_menu_uni unique(c_menu),constraint c_customer_day_chk check(c_customer_day>1),constraint c_profit_chk check(c_profit>500));
 desc chat_center;
 
 INSERT INTO chat_center VALUES(1,'ganesh chats','ganesh','gobi',6000,100,'rajajinagar','items of chats',50,3);

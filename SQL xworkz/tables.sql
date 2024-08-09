@@ -172,6 +172,6 @@ ALTER TABLE metro_info ADD CONSTRAINT metro_info_line_number_check CHECK (line_n
 
 SELECT * FROM metro_info;
 
-
+show table status;
 
 
